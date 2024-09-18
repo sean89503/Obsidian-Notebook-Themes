@@ -36,8 +36,8 @@ https://angel-rs.github.io/css-color-filter-generator
 }
 
 /* Recolors images on the page with the current accent color. */
-.recolor-images img {
-  filter: var(--image-effect);
+.recolor-images img:not([src*=".jpeg"]):not([src*=".jpg"]):not([src*=".bmp"]):not([src*=".tiff"]):not([src*=".webp"]) {
+    filter: var(--image-effect);
 }
 
 /* ---------------------------- Page Backgrounds ---------------------------- */
